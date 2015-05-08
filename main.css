@@ -1,0 +1,225 @@
+body {
+  text-align: center;
+/*  background-color: #000000;*/
+  font-family: 'Roboto Slab', serif;
+  background-image: url("http://juliewight.com/wp-content/uploads/2013/11/sunny-wallpaper.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  display: block;
+}
+
+.zip-wrapper {
+  display: block;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 70px;
+/*  background-color: #002200;*/
+  color: white;
+  border-radius: 20px;
+  padding: 5px 25px;
+  margin: 20px auto 40px;
+}
+
+temp, weather, humidity, day1, day2, day3, day4, day5 {
+  display: inline-block;
+  font-size: 22px;
+  background-color: rgba(0, 59, 0, 0.4);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 180px;
+  position: relative;
+  vertical-align: top;
+}
+
+.data {
+  position: relative;
+}
+
+temp:empty, weather:empty, humidity:empty, day1:empty, day2:empty, day3:empty, day4:empty, day5:empty {
+  display: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto 0;
+}
+
+zip {
+  color: white;
+  padding: 5px 15px;
+  display: inline-block;
+  margin: 0 auto 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+form {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto -50px;
+}
+
+button, .submit {
+  cursor: pointer;
+}
+
+form>input, button {
+  margin: 0 auto 15px;
+  background-color: rgba(45, 233, 45, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+form>input:first-child {
+  background-color:white;
+  color: #002200;
+}
+
+form>input:first-child:focus {
+  outline: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #002200;
+  font-weight: bold;
+}
+
+.chide {
+  color: red;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+/*  margin-bottom: -10px;*/
+  position: relative;
+  top: -90px;
+}
+
+/*button {
+  max-width: 300px;
+}*/
+
+.fiveday {
+  background-color: blue;
+  display: block;
+  height: 30px;
+  line-height: 4px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.small {
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+
+.initial_load {
+  position: relative;
+  top: -60px;
+}
+
+temp>p {
+  display: block;
+  margin: 0;
+}
+
+high {
+  color: red;
+}
+
+low {
+  color: skyblue;
+}
+
+day1, day2, day3, day4, day5 {
+  color: #CCFFCC;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+  h1 {
+    font-size: 110px;
+  }
+  body {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/93/c2/d9/93c2d99d4734391b4e57bda1a7e5db05.jpg");
+  }
+  day1, day2, day3, day4, day5, temp, weather, humidity {
+    font-size: 70px;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .small {
+    text-align: center;
+  }
+  
+  temp, weather, humidity {
+    display: block;
+    margin: 10px auto 10px;
+  }
+  
+  img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+  }
+  .small {
+    font-size: 40px;
+  }
+  zip {
+    font-size: 60px;
+  }
+  form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form>input, button {
+    display: block;
+    font-size: 60px;
+    width: 600px;
+    background-color: rgba(0, 59, 0, 0.6);
+  }
+  .fiveday {
+  background-color: blue;
+  display: block;
+  height: 100%;
+  line-height: 100%;
+  }
+  .zipcode {
+    padding: 0;
+/*    margin: 0;*/
+    width: 600px;
+  }
+  ::-webkit-input-placeholder {
+  color: #002200;
+  font-size: 45px;
+  position: relative;
+  top: 15px;
+  left: 25px;
+/*  line-height: 20px;*/
+/*  font-weight: bold;*/
+ }
+  .chide {
+    font-size: 40px;
+    position: relative;
+    top: -490px;
+  }
+}

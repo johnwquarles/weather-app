@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <!-- CDN content delivery network links SKELETON/BOOTSTRAP/ETC... -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="header"><h1>Current Weather</h1></div>
+      <form>
+        <input class="zipcode" type="text" pattern="^\d{5}(?:[-\s]\d{4})?$" placeholder = "enter ZIP code">
+        <input class="submit" type="submit">
+        <button class="loc">Check current location</button>
+        <button class="fiveday hidden">Get 5-day Forecast</button>
+      </form>
+      <p class="chide hidden">Please enter a valid ZIP code!</p>
+      <div class="data">
+        <div class="zip-wrapper">
+          <zip></zip>
+        </div>
+        <temp></temp>
+        <weather></weather>
+        <humidity></humidity>
+        <day1></day1>
+        <day2></day2>
+        <day3></day3>
+        <day4></day4>
+        <day5></day5>
+      </div>
+    <!-- JS: CDN links LODASH/JQUERY/ETC... -->
+    <script src="main.js"></script>
+  </body>
+</html>

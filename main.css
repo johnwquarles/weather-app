@@ -2,9 +2,11 @@ body {
   text-align: center;
 /*  background-color: #000000;*/
   font-family: 'Roboto Slab', serif;
-  background-image: url("http://juliewight.com/wp-content/uploads/2013/11/sunny-wallpaper.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: url("/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header {
